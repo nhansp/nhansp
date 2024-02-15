@@ -1,12 +1,5 @@
-[acc2][7] [d][8] [fb][1] [ig][2] [tw][3] [yt][4] [xda][5]
+[fb](https://www.facebook.com/speedbreaker2024) [ig](https://www.instagram.com/nhansp._) [tw](https://twitter.com/nhansp1) [yt](https://www.youtube.com/channel/UCM-0_zitCtRqJ0BbLrzDGIw) [xda](https://forum.xda-developers.com/m/nhansp.12373061/) [cấp 3](https://c.tmath.vn/user/trantrungnhan)
 discord: nhansp
-[1]: https://www.facebook.com/speedbreaker2023
-[2]: https://www.instagram.com/nhansp._
-[3]: https://twitter.com/nhansp1
-[4]: https://www.youtube.com/channel/UCM-0_zitCtRqJ0BbLrzDGIw
-[5]: https://forum.xda-developers.com/m/nhansp.12373061/
-[7]: https://c.tmath.vn/user/trantrungnhan
-[8]: https://c.tmath.vn/user/nguyenlephuocduy
 
 <!--
 **nhansp/nhansp** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
