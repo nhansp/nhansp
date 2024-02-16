@@ -226,24 +226,29 @@ ul li a:hover {
 .phduy {
   background-size: 100%;
   background-color: #000000;
-  background-image: linear-gradient(to right, rgba(146, 146, 146, 0.52), rgba(117, 19, 93, 0.73)),url('https://nhansp.github.io/phduy/home.jpg');
-  color: #afafaf
+  background-image: linear-gradient(to left, rgba(146, 146, 146, 0.52), rgba(167, 42, 42, 0.73)),url('https://nhansp.github.io/phduy/home.jpg');
+  color: #ffffff
 }
 
 .phduy:hover {
   background-color: #000000;
   background-image: url('https://nhansp.github.io/phduy/home.jpg');
   background-size: 100%;
-  color: #ffffff
+  color: rgba(255, 99, 99, 0.73)
 }
 
 .mquan {
-  color: #000000
+  background-size: 100%;
+  background-color: #000000;
+  background-image: linear-gradient(to right, rgba(146, 146, 146, 0.52),rgba(171,205,239,1.000)),url('https://nhansp.github.io/mquan/assets/profile-pic.png');
+  color: #ffffff
 }
 
 .mquan:hover {
   background-color: #000000;
-  color: #ffffff;
+  background-image: url('https://nhansp.github.io/mquan/assets/profile-pic.png');
+  background-size: 100%;
+  color: rgba(0, 195, 255, 0.73)
 }
 
 .image {
@@ -294,7 +299,7 @@ ul li a:hover {
     top: 85px;
     background-color: #000000;
     flex-direction: column;
-    justify-content: center     ;
+    justify-content: center;
     gap: 3rem;
   }
 
