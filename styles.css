@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
 @keyframes move-gradient {
   0% {
     background-position: 0 0;
@@ -6,6 +7,45 @@
   100% {
     background-position: 200% 0;
   }
+}
+@keyframes slideTop {
+  0% {
+      opacity: 0;
+      transform: translateY(80px);
+  }
+
+  100% {
+      opacity: 100%;
+      transform: translateY(0);
+  }
+}
+
+@keyframes slideRight {
+  0% {
+      opacity: 0;
+      transform: translateX(-80px);
+  }
+
+  100% {
+      opacity: 100%;
+      transform: translateX(0);
+  }
+}
+
+@keyframes slideLeft {
+  0% {
+      opacity: 0;
+      transform: translateX(80px);
+  }
+
+  100% {
+      opacity: 100%;
+      transform: translateX(0);
+  }
+}
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
 :root {
@@ -50,6 +90,7 @@ nav {
 }
 
 nav .logo a {
+  animation: fadeIn 1s;
   font-size: 1.5rem;
   font-weight: 600;
   color: #ffffff;
@@ -82,6 +123,9 @@ ul {
 }
 
 ul li a {
+  opacity: 0;
+  animation: slideTop .5s ease forwards;
+  animation-delay: calc(.2s * var(--i));
   padding: 0.5rem 1rem;
   border: 2px solid transparent;
   text-decoration: none;
@@ -118,6 +162,9 @@ ul li a:hover {
 }
 
 .subtitle {
+  opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: .5s;
   letter-spacing: 2px;
   color: var(--text-light);
   font-weight: 600;
@@ -125,6 +172,9 @@ ul li a:hover {
 }
 
 .title {
+  opacity: 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: .5s;
   font-size: 2.5rem;
   font-weight: 400;
   line-height: 3rem;
@@ -137,18 +187,27 @@ ul li a:hover {
 }
 
 .description {
+  opacity: 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: .5s;
   line-height: 1.5rem;
   color: #ffffff;
   margin-bottom: 2rem;
 }
 
 .description2 {
+  opacity: 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: .5s;
   line-height: 1.5rem;
   color: #ffffff;
   margin-bottom: 2rem;
 }
 
 .action__btns {
+  opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: .5s;
   display: flex;
   gap: 1rem;
 }
@@ -188,6 +247,9 @@ ul li a:hover {
 }
 
 .image {
+  opacity: 0;
+  animation: slideTop .5s ease forwards;
+  animation-delay: .5s;
   display: grid;
   place-items: center;
 }
@@ -214,6 +276,8 @@ ul li a:hover {
 
 @media (width < 750px) {
   nav .checkbox {
+    opacity: 0;
+    animation: slideLeft .5s ease forwards;
     display: block;
   }
 
