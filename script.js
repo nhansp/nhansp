@@ -1,7 +1,7 @@
 "use strict"
 
-var time_before = new Date("Mar 17, 2024 08:59:59").getTime(),
-    time_during = new Date("Mar 16, 2024 03:59:59").getTime();
+var time_before = new Date("Mar 17, 2024 09:00:00").getTime(),
+    time_during = new Date("Mar 17, 2024 12:00:00").getTime();
 
 var x = setInterval(function(){
     var time_now = new Date().getTime();
@@ -19,10 +19,21 @@ var x = setInterval(function(){
     var minutes_during = Math.floor((time_diff_during % (1000 * 60 * 60)) / (1000 * 60));
     var seconds_during = Math.floor((time_diff_during % (1000 * 60)) / 1000);
 
-    var before_string = new String("Hãy tham gia buổi chụp kỷ yếu cùng mình vào lúc 9:00am, Chủ Nhật 17/03/2024 | Còn " + days_before + " ngày, " + hours_before + " giờ " + minutes_before + " phút " + seconds_before + " giây.");
-    var during_string = new String("Tham gia chụp ảnh kỷ yếu A3K55 cùng mình đi, vì chỉ còn " + hours_during + " giờ " + minutes_during + " phút " + seconds_during + " giây nữa là hết rồi 🫡")
+    var before_string = new String("Mời ae đến chụp kỷ yếu cùng t vào lúc 9:00am, Chủ Nhật 17/03/2024 | Còn " + days_before + " ngày, " + hours_before + " giờ " + minutes_before + " phút " + seconds_before + " giây.");
+    var during_string = new String("Đến chụp ảnh đi vì chỉ còn " + hours_during + " giờ " + minutes_during + " phút " + seconds_during + " giây nữa là hết rồi 🫡")
 
-    document.getElementById("header_a_logo").innerHTML = before_string;
-    document.getElementById("header_a_join").innerHTML = "Mời bạn cùng tham dự!";
-    
+    // header_a_logo, header_a_join
+    if (time_diff_before >= 0 && time_diff_during >= 0){
+        document.getElementById("header_a_logo").innerHTML = before_string;
+        document.getElementById("header_a_join").innerHTML = "Đến đê.";
+    }
+    if (time_diff_before < 0 && time_diff_during >= 0){
+        document.getElementById("header_a_logo").innerHTML = during_string;
+        document.getElementById("header_a_join").innerHTML = "Đến nhanhhhhhhh!";
+    }
+    if (time_diff_before < 0 && time_diff_during < 0){
+        document.getElementById("header_a_logo").innerHTML = "Chờ tí sắp có ảnh kỷ yếu rồi.";
+        document.getElementById("header_a_join").innerHTML = "Mà thực ra là rất nhiều ảnh 😜";
+    }
+
 }, 1000);
