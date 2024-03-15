@@ -1,7 +1,7 @@
 "use strict"
 
 var time_before = new Date("Mar 17, 2024 09:00:00").getTime(),
-    time_during = new Date("Mar 17, 2024 12:00:00").getTime();
+    time_during = new Date("Mar 17, 2024 11:00:00").getTime(); // chụp b bè từ 9h -> 11h
 
 var x = setInterval(function(){
     var time_now = new Date().getTime();
