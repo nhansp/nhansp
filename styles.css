@@ -325,7 +325,7 @@ ul li a:hover {
 
 .image img {
   width: min(25rem, 90%);
-  height: min(30rem, 90%);
+  height: min(25rem, 90%);
   object-fit: cover;
   border-radius: 25px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 10);
