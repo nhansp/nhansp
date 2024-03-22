@@ -12,6 +12,7 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>nhansp | portfolio</title>
     <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   </head>
   <body>
     
@@ -23,7 +24,9 @@
 
     <div class="nav">
       <div class="nav__content">
-        <div class="logo"><a href="https://github.com/nhansp/nhansp">nhansp | my portfolio</a></div>
+        <div class="logo">
+          <a href="https://github.com/nhansp/nhansp">nhansp | my portfolio: 💛 Locket edition</a>
+        </div>
         <label for="check" class="checkbox">
           <i class="ri-menu-line"></i>
         </label>
@@ -41,47 +44,96 @@
     <section class="section">
       <div class="section__container">
         <div class="content">
-          <p class="subtitle">A3K55 | THPT Chuyên Đại học Vinh</p>
-          <h1 class="title">
-            <span>đi kỷ yếu đê</span>
-          </h1>
+          <p class="subtitle">
+            <img class="gh_page_status" src="https://github.com/nhansp/nhansp/actions/workflows/pages/pages-build-deployment/badge.svg" style="max-width: 10rem;">
+            &nbsp;A3K55 | THPT Chuyên Đại học Vinh
+          </p>
+          <div class="title">
+            <button class="prv" id="title_prv" onclick="plusSlides(-1)">&#10094;</button>
+            <span id="title_name"></span>
+            <button class="nxt" id="title_nxt" onclick="plusSlides(1)">&#10095;</button>
+            <script src="script_btn.js"></script>
+          </div>
           <p class="description">
-            📸📸📸📸📸📸📸📸📸📸📸📸📸📸📸📸📸📸📸📸📸📸📸📸📸📸📸📸📸📸📸📸📸📸📸📸📸📸📸📸📸📸📸📸📸📸📸📸📸📸📸📸📸📸
+            welp chắc web tầm này mình sẽ k cập nhật gì thêm, hiện tại đang
+            chuẩn bị cho A3K55 Yearbook. à có thêm shadow có nút với đếm thời
+            gian các thứ các kiểu xàm xí với cả cái slideshow với cái gì đó 
+            cứ mò đi là ra (viết cho đủ chữ)
           </p>
           <p class="description2">
             <a style="color: white; font-weight: bold">mời các bạn tiếp tục xem trang của Phước Duy và Minh Quân:</a>
           </p>
           <div class="action__btns">
-            <button class="phduy" onclick="location.href='https://nhansp.github.io/phduy'">phduy</button>
-            <button class="mquan" onclick="location.href='https://nhansp.github.io/mquan'">mquan</button>
+            <button class="phduy" onclick="location.href='https://yuuki2k6.github.io/phduy.v3'">phduy</button>
+            <button class="mquan" onclick="location.href='https://minhquanabcxyz.github.io/mquan'">mquan</button>
           </div>
         </div>
         <div class="image">
-          <img src="assets/iv_light.png" alt="invitation"/>
+          <img src="assets/nhansp,mrduck6000,hieubu.jpg"/>
         </div>
+        <div class="image">
+          <img src="assets/duy.png"/>
+        </div>
+        <div class="image">
+          <img src="assets/mq.png"/>
+        </div>
+        <div class="image">
+          <img src="assets/nhansp,tv,ll.jpg"/>
+        </div>
+        <div class="image">
+          <img src="assets/ailinh.png"/>
+        </div>
+        <div class="image">
+          <img src="assets/david.jpg"/>
+        </div>
+        <div class="image">
+          <img src="assets/duy,tnhi.jpg"/>
+        </div>
+        <div class="image">
+          <img src="assets/vom.png"/>
+        </div>
+        <div class="image">
+          <img src="assets/vth.png"/>
+        </div>
+        <div class="image">
+          <img src="assets/duyancut.png"/>
+        </div>
+        <script src="script_img.js"></script>
       </div>
     </section>
+  </section>
 
-    <section class="section2" id="a3k55">
-      <div class="section2_container">
-        <div class="content2">
-          <textarea readonly="readonly" class="giterror">
+  <section class="section2" id="a3k55">
+    <div class="section2_container">
+      <div class="content2">
+        <textarea readonly="readonly" class="giterror">
 nhansp@[...]:~$ 
+
 git clone 
-https://github.com/nhansp/
-a3k55.git
-Cloning into 'a3k55'...
-remote: Repository not found.
-fatal: repository 
-'https://github.com/nhansp/
-a3k55.git/' 
-not found
+https://github.com/a3k55yearbo
+ok/a3k55yearbook.github.io
+
+Cloning into 'a3k55yearbook
+.github.io'...
+remote: Enumerating objects:
+20, done.
+remote: Counting objects: 
+100% (20/20), done.
+remote: Compressing objects:
+100% (17/17), done.
+remote: Total 20 (delta 3), 
+reused 3 (delta 0), pack-reused 0
+Receiving objects: 100% (20/20),
+ 5.43 KiB | 5.43 MiB/s, done.
+Resolving deltas: 100% (3/3),
+ done.
 ____________________________
 
 coming soon...
-          </textarea>
-        </div>
+        </textarea>
       </div>
-    </section>
+    </div>
+  </section>
+    
   </body>
 </html>

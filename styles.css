@@ -70,16 +70,13 @@ html {
 /* Style the header with a grey background and some padding */
 .header {
   overflow: hidden;
-  background-color: #3b1515;
+  background-color: #699ed3;
   padding-top: 0px;
   margin: auto;
   padding: 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-  background-image: url('assets/a3logo.png');
-  background-repeat: no-repeat;
   background-size: 30px;
   background-position: 30px;
 }
@@ -100,8 +97,6 @@ html {
   white-space: nowrap;
 }
 
-
-/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
 @media screen and (max-width: 500px) {
   .header {
     background-image: none;
@@ -226,8 +221,10 @@ ul li a:hover {
   letter-spacing: 2px;
   color: var(--text-light);
   font-weight: 600;
-  margin-bottom: 0.5rem;
+  display: inline-block;
+  margin-bottom: 1rem;
 }
+
 
 .title {
   opacity: 0;
@@ -238,10 +235,15 @@ ul li a:hover {
   line-height: 3rem;
   color: #ffffff;
   margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .title span {
   font-weight: 600;
+  text-align: center;
+  white-space: pre-wrap;
 }
 
 .description {
@@ -285,41 +287,84 @@ ul li a:hover {
   background-size: 100%;
   background-color: #000000;
   background-image: linear-gradient(to left, rgba(146, 146, 146, 0.52), rgba(167, 42, 42, 0.73)),url('https://nhansp.github.io/phduy/home.jpg');
-  color: #ffffff
+  color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
 }
 
 .phduy:hover {
   background-color: #000000;
   background-image: url('https://nhansp.github.io/phduy/home.jpg');
   background-size: 100%;
-  color: rgba(255, 99, 99, 0.73)
+  color: rgba(255, 99, 99, 0.73);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 2);
 }
 
 .mquan {
   background-size: 100%;
   background-color: #000000;
   background-image: linear-gradient(to right, rgba(146, 146, 146, 0.52),rgba(171,205,239,1.000)),url('https://nhansp.github.io/mquan/assets/profile-pic.png');
-  color: #ffffff
+  color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
 }
 
 .mquan:hover {
   background-color: #000000;
   background-image: url('https://nhansp.github.io/mquan/assets/profile-pic.png');
   background-size: 100%;
-  color: rgba(0, 195, 255, 0.73)
+  color: rgba(0, 195, 255, 0.73);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 2);
 }
 
 .image {
   opacity: 0;
   animation: slideTop .5s ease forwards;
   animation-delay: .5s;
-  display: grid;
+  display: none;
   place-items: center;
 }
 
 .image img {
   width: min(25rem, 90%);
+  height: min(30rem, 90%);
+  object-fit: cover;
   border-radius: 25px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 10);
+}
+
+.prv {
+  background: linear-gradient(to left, rgba(90, 90, 90, 0.52), rgba(0, 0, 0, 0.73));
+  border-radius: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 400;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+
+.nxt {
+  background: linear-gradient(to right, rgba(90, 90, 90, 0.52), rgba(0, 0, 0, 0.73));
+  border-radius: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 400;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+
+.prv:hover {
+  background: none;
+}
+
+.nxt:hover {
+  background: none;
+}
+
+.animated_slideLeft {
+  animation-name: slideLeft;
+  animation-duration: .5s;
+}
+
+.animated_slideRight {
+  animation-name: slideRight;
+  animation-duration: .5s;
 }
 
 .section2 {

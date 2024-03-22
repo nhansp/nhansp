@@ -1,7 +1,7 @@
 "use strict"
 
-var time_before = new Date("Mar 17, 2024 09:00:00").getTime(),
-    time_during = new Date("Mar 17, 2024 11:00:00").getTime(); // chụp b bè từ 9h -> 11h
+var time_before = new Date("Jun 27, 2024 08:00:00").getTime(),
+    time_during;
 
 var x = setInterval(function(){
     var time_now = new Date().getTime();
@@ -19,21 +19,10 @@ var x = setInterval(function(){
     var minutes_during = Math.floor((time_diff_during % (1000 * 60 * 60)) / (1000 * 60));
     var seconds_during = Math.floor((time_diff_during % (1000 * 60)) / 1000);
 
-    var before_string = new String("Mời ae đến chụp kỷ yếu cùng t vào lúc 9:00am, Chủ Nhật 17/03/2024 | Còn " + days_before + " ngày, " + hours_before + " giờ " + minutes_before + " phút " + seconds_before + " giây.");
-    var during_string = new String("Đến chụp ảnh đi vì chỉ còn " + hours_during + " giờ " + minutes_during + " phút " + seconds_during + " giây nữa là hết rồi 🫡")
+    var before_string = new String("Còn " + days_before + " ngày, " + hours_before + " giờ " + minutes_before + " phút " + seconds_before + " giây trước khi diễn ra kì thi THPTQG.");
+    // var during_string = new String("Đến chụp ảnh đi vì chỉ còn " + hours_during + " giờ " + minutes_during + " phút " + seconds_during + " giây nữa là hết rồi 🫡")
 
-    // header_a_logo, header_a_join
-    if (time_diff_before >= 0 && time_diff_during >= 0){
-        document.getElementById("header_a_logo").innerHTML = before_string;
-        document.getElementById("header_a_join").innerHTML = "Đến đê.";
-    }
-    if (time_diff_before < 0 && time_diff_during >= 0){
-        document.getElementById("header_a_logo").innerHTML = during_string;
-        document.getElementById("header_a_join").innerHTML = "Đến nhanhhhhhhh!";
-    }
-    if (time_diff_before < 0 && time_diff_during < 0){
-        document.getElementById("header_a_logo").innerHTML = "Chờ tí sắp có ảnh kỷ yếu rồi.";
-        document.getElementById("header_a_join").innerHTML = "Mà thực ra là rất nhiều ảnh 😜";
-    }
+    document.getElementById("header_a_logo").innerHTML = before_string;
+    document.getElementById("header_a_join").innerHTML = "Tìm hiểu thêm về kỷ yếu nếu bạn đã bỏ lỡ tại đây.";
 
 }, 1000);
