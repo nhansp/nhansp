@@ -380,19 +380,23 @@ ul li a:hover {
   gap: 4rem;
 } 
 
-.giterror {
+.content2_title {
+  justify-content: space-between;
+  text-align: center;
+  font-size: xx-large;
+  padding: 10px;
+  margin-top: 90px;
+  margin-bottom: 50px;
+}
+
+.content2 {
+  justify-content: center;
+}
+
+.video {
   max-width: 100%;
-  width: 225px;
-  height: 250px;
-  display: flexbox;
-  margin-left: auto;
-  margin-right: auto;
-  place-self: center;
-  background-color: #3b1515;
-  color: #ffffff;
-  white-space: pre;
-  margin-top: 30%;
-  margin-left: 45%;
+  height: auto;
+  aspect-ratio: 16/9;
 }
 
 @media (width < 1401px) {
