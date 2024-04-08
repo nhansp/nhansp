@@ -176,7 +176,7 @@ ul {
 }
 
 ul li a {
-  opacity: 0;
+  opacity: 0; 
   animation: slideTop .5s ease forwards;
   animation-delay: calc(.2s * var(--i));
   padding: 0.5rem 1rem;
