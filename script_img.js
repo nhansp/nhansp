@@ -6,7 +6,7 @@ function plusSlides(n) {
 }
 
 function showSlides(n) {
-  const names = ["Tran Trung Nhan\nNguyen Huu Anh Duc, Bui Nhat Hieu", "Nguyen Le Phuoc Duy", "Le Phuoc Minh Quan", "Tran Trung Nhan\nA13K55 friends", "Truong Ai Linh", "Tran Hoang Tien\nDavid Tien Tran", "Nguyen Le Phuoc Duy\ncosplayer gf", "Vo Duc Manh", "Van Thanh Huy 👅", "Nguyen Le Phuoc Duy 🤑"];
+  const names = ["Tran Trung Nhan\nNguyen Huu Anh Duc, Bui Nhat Hieu", "Nguyen Le Phuoc Duy", "Le Phuoc Minh Quan", "Tran Trung Nhan\nA13K55 friends", "Truong Ai Linh", "Tran Hoang Tien\nDavid Tien Tran", "Vo Duc Manh", "Van Thanh Huy 👅", "Nguyen Le Phuoc Duy 🤑"];
   let i;
   let slides = document.getElementsByClassName("image");
   if (n > slides.length) {slideIndex = 1}
