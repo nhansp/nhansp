@@ -4,7 +4,7 @@
 
 currently studying Computer Science at Faculty of Techonology and Data Science, [Foreign Trade University](https://ftu.edu.vn).
 
-previously studied at A3K55, [Vinh University HSGS](https://truongthptchuyen.vinhuni.edu.vn).
+previously studied at A3K55 (IT major), [Vinh University HSGS](https://truongthptchuyen.vinhuni.edu.vn).
 
 <img src="assets/ftu.jpg" width="532">  <img src="assets/a3.jpg" width="600">
 
