@@ -1,4 +1,4 @@
-[https://nhansp.github.io/nhansp](https://nhansp.github.io/nhansp) is still available, but the source code has been moved to [`nhansp/web-archive`](https://github.com/nhansp/nhansp/tree/web-archive) branch.
+[https://nhansp.github.io/nhansp](https://nhansp.github.io/nhansp) is still available, but the source code has been moved to [`nhansp:web-archive`](https://github.com/nhansp/nhansp/tree/web-archive) branch.
 
 ## about me
 
