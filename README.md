@@ -8,7 +8,7 @@ previously studied at A3K55 (IT major), [Vinh University HSGS](https://truongthp
 
 ## what im doing
 
-* **Android**: building [Evolution X 9.4](https://github.com/Evolution-X) for Pixel 4 XL (coral) and Pixel 6a (bluejay) - with my own tweaks (I'm still a noob).
+* **Android**: building [Evolution X](https://github.com/Evolution-X) for Pixel 4 XL (coral) and Pixel 6a (bluejay) - with my own tweaks (I'm still a noob).
 
     Try out my builds at [https://tvyiutnhisokewt.github.io](https://tvyiutnhisokewt.github.io), or take a look at the [organization](https://github.com/tvyiutnhisokewt).
 
@@ -28,4 +28,4 @@ previously studied at A3K55 (IT major), [Vinh University HSGS](https://truongthp
 
 * **pc specs**: MSI Katana 15 B13VFK, i7 13620H, RTX 4060, 16GB/1TB on Ubuntu 24.04.1/Windows 11/macOS Sequoia (hackintosh barely works).
 
-* ~~if you are involved in my situation, read [this](https://github.com/nhansp/nhansp/commit/4a76e852fc5b5f85c519309fb478edd18f2da9fd).~~
+* ~~if you are involved in my situation, read [this](at-commit/4a76e852fc5b5f85c519309fb478edd18f2da9fd).~~
