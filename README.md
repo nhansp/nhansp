@@ -6,8 +6,6 @@ currently studying Computer Science at Faculty of Techonology and Data Science, 
 
 previously studied at A3K55 (IT major), [Vinh University HSGS](https://truongthptchuyen.vinhuni.edu.vn).
 
-<img src="assets/ftu.jpg" width="532">  <img src="assets/a3.jpg" width="600">
-
 ## what im doing
 
 * **Android**: building [Evolution X 9.4](https://github.com/Evolution-X) for Pixel 4 XL (coral) and Pixel 6a (bluejay) - with my own tweaks (I'm still a noob).
